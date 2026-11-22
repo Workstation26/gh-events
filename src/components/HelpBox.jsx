@@ -10,7 +10,7 @@ function HelpBox({ title, text }) {
     </article>
   ); 
 }
-// test
+
 // add a skip comment
 
 HelpBox.propTypes = {
