@@ -16,7 +16,7 @@ on:
       - 'dev-*'    # dev-new dev-feature dev-123 dev-this-is-new
       - 'feat/**'  # feat/this-is-new feat/123 feat/feature feat/new/button
       # developer-1
-    paths:
+    paths-ignore:
       - '.github/workflows/'
 jobs:
   deploy:
