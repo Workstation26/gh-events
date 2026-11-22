@@ -3,6 +3,11 @@ on:
   pull_request:
     types: 
       - opened
+    branches:
+      - master
+      - main
+      - 'dev-*'    # dev-new dev-feature dev-123 dev-this-is-new
+      - 'feat/**'  # feat/this-is-new feat/123 feat/feature feat/new/button
   workflow_dispatch:
   push:
     branches:
@@ -11,7 +16,7 @@ on:
       - 'dev-*'    # dev-new dev-feature dev-123 dev-this-is-new
       - 'feat/**'  # feat/this-is-new feat/123 feat/feature feat/new/button
       # developer-1
-    paths-ignore:
+    paths:
       - '.github/workflows/'
 jobs:
   deploy:
