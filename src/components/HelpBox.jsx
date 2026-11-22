@@ -8,7 +8,7 @@ function HelpBox({ title, text }) {
       <h2>{title}</h2>
       <p>{text}</p>
     </article>
-  );
+  ); 
 }
 
 HelpBox.propTypes = {
